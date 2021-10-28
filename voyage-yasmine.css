@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2? family= Crete+Round & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+html{
+    width: 100%;
+    }
+
+body{
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    }
+
+h1, h2, h3, h4, h5{
+    color: #444;
+    }
+
+h1{
+    font-family : 'Crete Round', serif ;
+    font-size: 45px;
+    }
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin: 50px;
+    }
+
+h3{
+    font-size: 30px;
+    }
+
+h4{
+    font-size: 24px;
+    }
+    
+h5{
+    font-size: 25px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: solid palevioletred 5px;
+    padding: 5px;
+    justify-content: center;
+    margin: auto;
+    background:rgb(224, 212, 214);
+    width: 66%;
+    }
+
+p{
+    line-height: 20px;
+    color: #444 ;
+    margin: 5px;
+    }
+
+p small{
+    color: rgb(216, 196, 216);
+    text-shadow: 0 0 0.4em #444, 0 0 0.4em #87F,
+        0 0 0.4em #444
+    }
+
+ul{
+    list-style: none;
+    }
+
+a{
+    text-decoration: none;
+    color:#444;
+    }
+
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+    }
+    
+.rose{
+    color:palevioletred;
+    }
+
+.clear{
+    clear: both;
+    }
+
+small{
+    font-size: 13px;
+    font-style: italic;
+    }
+
+mark{
+    color:#444;
+    background-color: palevioletred;
+    }
+
+/* HEADER */
+header{
+    height: 120px;
+    }
+
+header h1{
+    float: left;
+    margin-top: 32px;
+    }
+
+header nav{
+    float: right;
+    margin-top: 30px;
+    }
+
+header nav ul li{
+    display: inline-block;
+    }
+
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    }
+
+/*Reset CSS*/
+:root{
+    --hauteur-menu:60px;
+    }
+
+.navbar{
+    width: 450px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+nav > ul{
+    display: flex;
+    text-align:center;
+    box-shadow: 0px 1px 2px 1px palevioletred;
+    height: var(--hauteur-menu);
+}
+
+nav > ul > li{
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    height: 100%;
+    flex: 2;
+    }
+
+nav > ul > li > a{
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    }
+
+li a{
+    text-decoration: none;
+    color:palevioletred;
+    }
+
+.menu-deroulant > a ::after{
+    content:'▼';
+    font-size: 10px;
+    margin-left: 7px;
+    display: inline-block;
+    }
+
+.sous-menu{
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color:white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+.sous-menu > li > a{
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items:center;
+    display: flex;
+    }
+
+nav > ul > li:hover > a{
+    color:#444;
+    }
+
+.sous-menu > li:hover{
+    background-color: #777;
+    }
+
+.sous-menu > li:hover > a {
+    color:pink;
+    }
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a::after{
+    animation: rotationFleche 0.2s linear forwards;
+    }
+
+@keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid violet;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid violet;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+}
+
+.menu-deroulant:hover > .sous-menu{
+    animation: apparitionSousMenu 1s forwards;
+    }
+
+/*Section*/
+
+#gp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    }
+
+#gauche{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-image: url('images\ voyages/yas/DrapeauA.jpeg');
+    }
+
+#droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-image: url('images\ voyages/yas/drapeau-espagne.jpg');
+
+    }
+
+.en-haut{
+    width: 100%; 
+    }
+
+.en-bas{
+    width: 100%;
+    }
+
+img{
+    width: 50%;
+    }
+
+.photo{
+    width: 380px;
+    height: 180px;
+    object-fit: cover;
+    }
+    
+.premier{
+    margin-bottom: 5px;
+    }
+    
+.texte{
+    margin-bottom: 20px;
+    }
+
+/*Footer*/
+
+footer{
+    height: 260px;
+    background-color: #444;
+    width: 100%;
+    }
+
+footer h1{
+    color:#ddd;
+    text-align: center;
+    padding-top: 80px;
+    }
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+    }
