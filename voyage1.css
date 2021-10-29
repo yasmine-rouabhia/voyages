@@ -300,13 +300,13 @@ nav > ul > li:hover > a{
     }
 
 #posi-1{
-    background-image: url('images\ voyages/fond2.jpg');
+    background-image: url('images_voyages/fond2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     }
 
 #posi-2{
-    background-image: url('images\ voyages/fond3.jpg');
+    background-image: url('images_voyages/fond3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     }
