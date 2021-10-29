@@ -1,0 +1,429 @@
+*{  margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height:25px;
+    margin: 200px;
+    margin-top: 1%;
+}
+
+
+         /* HEADER */
+header{
+    height: 120px;
+    }
+
+header h1{
+    float: left;
+    margin-top: 32px;
+    }
+
+header nav{
+    float: right;
+    margin-top: 30px;
+    }
+
+header nav ul li{
+    display: inline-block;
+    }
+
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    }
+
+/*Reset CSS*/
+:root{
+    --hauteur-menu:60px;
+    }
+
+.navbar{
+    width: 450px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+nav > ul{
+    display: flex;
+    text-align:center;
+    box-shadow: 0px 1px 2px 1px palevioletred;
+    height: var(--hauteur-menu);
+}
+
+nav > ul > li{
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    height: 100%;
+    flex: 2;
+    }
+
+nav > ul > li > a{
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    }
+
+li a{
+    text-decoration: none;
+    color:palevioletred;
+    }
+
+.menu-deroulant > a ::after{
+    content:'▼';
+    font-size: 10px;
+    margin-left: 7px;
+    display: inline-block;
+    }
+
+.sous-menu{
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color:white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+.sous-menu > li > a{
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items:center;
+    display: flex;
+    }
+
+nav > ul > li:hover > a{
+    color:#444;
+    }
+
+.sous-menu > li:hover{
+    background-color: #777;
+    }
+
+.sous-menu > li:hover > a {
+    color:pink;
+    }
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a::after{
+    animation: rotationFleche 0.2s linear forwards;
+    }
+
+@keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid violet;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid violet;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+}
+
+.menu-deroulant:hover > .sous-menu{
+    animation: apparitionSousMenu 1s forwards;
+    }
+
+.rose{
+    color:palevioletred;
+}
+    
+
+                    /* fin du header */
+
+                    /*Footer*/
+
+footer{
+    height: 260px;
+    background-color: #444;
+    width: 100%;
+    }
+
+footer h1{
+    color:#ddd;
+    text-align: center;
+    padding-top: 80px;
+    }
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+    }
+
+
+                    /* -CLASS- */
+
+input{ 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+}
+
+                    /* Logo */
+
+.logo{
+  padding-left: 4%;
+}
+
+.box_logo{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+.box_lien{ display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+                                         /* Haut */
+       
+
+.titre_h{ display: flex;
+        justify-content: start;
+
+}
+                                              /* Boutons */
+
+
+nav.boutons ul{ 
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav.boutons ul li{ 
+        list-style-type: none;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.5s all;
+        background-color: white;
+        
+}
+
+nav.boutons ul li:hover{ 
+        transform: scale(1.2);
+        transition: 0.5s all;
+        background-color: wheat;
+
+}
+nav.boutons ul li a{ font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+nav.boutons ul li a:hover{ color: white;
+
+}
+
+.nav-item{ height: 80px;
+    flex: 1;
+}
+
+
+.hotel{ background: url("https://img.icons8.com/ios/50/000000/bed.png") 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+
+}
+.activité{ background: url("https://img.icons8.com/ios/50/000000/two-tickets.png") 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.restaurant{ background: url("https://img.icons8.com/ios/50/000000/restaurant.png") 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+                                      /* Images Haut */
+
+.images_h{ display: flex;
+    flex-flow: row wrap ;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.img1{ transition: 0.3;
+
+}
+
+.img1:hover{ transition: 0.3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img2{  display: flex;
+    flex-direction: column;
+    transition: 0.6;
+}
+.img2:hover{ transition: 0.6;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+                                         /* Text */
+
+.voyage{ font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titre_h{ font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.italie{ padding: 10px;
+
+}
+
+.titre_p{ font-family: 'Open Sans', sans-serif;
+    font-size: 180%;
+    padding: 10px;
+    text-align: left;
+
+}
+.texte_p{ font-family: 'Zen Old Mincho', serif;
+        padding-top: 20px;
+
+}
+
+.titre_{ font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.text_{ font-family: 'Zen Old Mincho', serif;
+
+}
+h2{ font-family: 'Open Sans', sans-serif;
+
+}
+span.flo{ color: burlywood;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+                                    /* Box  */
+
+.presentation{ text-align: left;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  
+}
+
+
+
+.images_{ display: flex;
+    flex-direction: row;
+    transition: 0.45s all;
+    cursor: pointer;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    
+}
+
+.i{ transition: 0.85s all;
+    padding: 10px;
+    
+}
+
+.i:hover{ transform: scale(.9);
+    transition: 0.85s all;
+
+}
+
+                /* sections */
+
+
+.musée1{ background-color: wheat;
+    width: 50%;
+
+}
+
+.item{ background-color: white;
+    margin: 80px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s all;
+
+}
+
+.item:hover{transition: 0.3s all;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+
+hr{ margin-top: 10px;
+    opacity: 0.5;
+
+}
+
+
+.sticky{ position: fixed;
+    left: 1%;
+    margin: 4px;
+
+}
+
+.roll{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+
+.cat{ display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 90px;
+    height: 5px;
+}
+
+
+
+
+.formulaire{ opacity: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
