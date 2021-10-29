@@ -248,7 +248,7 @@ nav > ul > li:hover > a{
     justify-content: center;
     text-align: center;
     width: 50%;
-    background-image: url('images\ voyages/yas/DrapeauA.jpg');
+    background-image: url('images_voyages/yas/DrapeauA.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -259,7 +259,7 @@ nav > ul > li:hover > a{
     justify-content: center;
     text-align: center;
     width: 50%;
-    background-image: url('images\ voyages/yas/DrapeauE.jpg');
+    background-image: url('images_voyages/yas/DrapeauE.jpg');
     }
 
 .en-haut{
