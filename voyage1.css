@@ -209,7 +209,7 @@ nav > ul > li:hover > a{
 /*Main image*/
 #main-image{
     height: 580px;
-    background: url("images\ voyages/décor.jpg") center no-repeat;
+    background: url("./images_voyages/décor.jpg") center no-repeat;
     background-size: cover;
     }
 
@@ -261,15 +261,15 @@ nav > ul > li:hover > a{
     }
 
 #steps-1{
-    background: url('images\ voyages/souvenir.png') no-repeat top center;
+    background: url(./images_voyages/souvenir.png) no-repeat top center;
     }
 
 #steps-2{
-    background: url('images\ voyages/voyage.png') no-repeat top center;
+    background: url(./images_voyages/voyage.png) no-repeat top center;
     }
 
 #steps-3{
-    background:url('images\ voyages/planifier.png') no-repeat top center;
+    background:url(./images_voyages/planifier.png) no-repeat top center;
     }
 
 /* Posi */

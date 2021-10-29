@@ -1,0 +1,493 @@
+/*  BALI */
+
+
+body{
+
+  
+  
+  
+}
+
+
+p{
+
+  font-family: 'Raleway', sans-serif;
+  color: black;
+
+}
+
+
+span.t1{
+
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* HEADER */
+
+header{
+  height: 120px;
+  }
+
+header h1{
+  float: left;
+  margin-top: 32px;
+  }
+
+header nav{
+  float: right;
+  margin-top: 30px;
+  }
+
+header nav ul li{
+  display: inline-block;
+  }
+
+header nav ul li a{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+  }
+
+/*Reset CSS*/
+:root{
+  --hauteur-menu:60px;
+  }
+
+.navbar{
+  width: 450px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+nav > ul{
+  display: flex;
+  text-align:center;
+  box-shadow: 0px 1px 2px 1px palevioletred;
+  height: var(--hauteur-menu);
+}
+
+nav > ul > li{
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  height: 100%;
+  flex: 2;
+  }
+
+nav > ul > li > a{
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  }
+
+li a{
+  text-decoration: none;
+  color:palevioletred;
+  }
+
+.menu-deroulant > a ::after{
+  content:'▼';
+  font-size: 10px;
+  margin-left: 7px;
+  display: inline-block;
+  }
+
+.sous-menu{
+  margin-top: var(--hauteur-menu);
+  width: 100%;
+  text-align: left;
+  background-color:white;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+  display: flex;
+  flex-direction: column;
+  }
+
+.sous-menu > li > a{
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  align-items:center;
+  display: flex;
+  }
+
+nav > ul > li:hover > a{
+  color:#444;
+  }
+
+.sous-menu > li:hover{
+  background-color: #777;
+  }
+
+.sous-menu > li:hover > a {
+  color:pink;
+  }
+
+@keyframes rotationFleche {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+
+.menu-deroulant:hover > a::after{
+  animation: rotationFleche 0.2s linear forwards;
+  }
+
+@keyframes apparitionSousMenu {
+  0% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+    border-top: 3px solid violet;
+  }
+  30% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid violet;
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+}
+
+.menu-deroulant:hover > .sous-menu{
+  animation: apparitionSousMenu 1s forwards;
+  }
+
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+    }
+    
+.rose{
+    color:palevioletred;
+    }
+  
+
+/* Titre */
+
+.back_grand{
+
+  background-image: url(../images_voyages/nico/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0s.7;
+
+}
+
+.main_bali{
+
+  padding-top: 4%;
+}
+
+.grand_titre{
+
+  font-family: 'Ephesis', cursive;
+  color: white;
+  
+  text-shadow: black 2px 2px 4px;
+  font-size: 80px;
+  text-align: center;
+
+  border: 5px solid #fff; 
+  border: 5px solid rgba(255, 255, 255, .5);
+    
+}
+
+
+/* Présentation Bali */
+
+  /* 1ere partie présentation */
+
+.t_pres{
+  
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  width: 70%;
+  color: white;
+}
+
+.back_pres{
+
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.box_titre1{
+
+  background: linear-gradient(90deg, rgba(52,88,48,1) 0%, rgba(63,104,67,1) 35%, rgba(74,120,86,1) 80%); 
+  height: 20px;
+  
+  
+  
+}
+.titre1_bali{
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  
+  
+}
+
+.photo_riz, .photo_costume, .photo_habitants, .photo_singe, .photo_gastro, .photo_hôtel{
+
+  box-shadow: 6px 5px 5px black;
+
+}
+
+.box_panneau1, .box_panneau2{
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* 2eme partie présentation */
+
+ul{
+
+  font-family: 'Raleway', sans-serif;
+  padding: 5%
+  
+}
+
+li{
+
+  font-weight: bolder;
+}
+
+.titre2_bali{
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  
+  
+}
+
+.box_region{
+
+  display: flex;
+  align-items: center;
+}
+
+.vidéo1{
+
+  padding-right: 4%;
+}
+
+.box_titre2{
+
+  background: linear-gradient(90deg, rgba(52,88,48,1) 0%, rgba(63,104,67,1) 35%, rgba(74,120,86,1) 80%); 
+  height: 20px;
+  
+}
+
+/* 3eme partie : centre interet */
+
+.box_titre3{
+
+  background: linear-gradient(90deg, rgba(52,88,48,1) 0%, rgba(63,104,67,1) 35%, rgba(74,120,86,1) 80%); 
+  height: 20px;
+
+}
+
+.photo1_interet{
+ 
+    width: 100px;
+    height: 100px;
+    background-image: url(../images_voyages/nico/interet1.jpg);
+    background-size: 600px 500px;
+    background-repeat: no-repeat;
+    transition: width 2s, height 4s;
+    box-shadow: 6px 5px 5px black;
+    
+    
+}
+
+.photo1_interet:hover , .photo2_interet:hover, .photo3_interet:hover, .photo4_interet:hover{
+  width: 600px;
+  height: 500px;
+}
+
+.titre3_bali{
+
+  padding-left: 4%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.box1_interet, .box2_interet, .box3_interet, .box4_interet{
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+.txt1_interet, .txt2_interet, .txt3_interet, .txt4_interet{
+
+  width: 35%;
+}
+
+.photo2_interet{
+
+    width: 100px;
+    height: 100px;
+    background-image: url(../images_voyages/nico/temple.jpg);
+    background-size: 600px 500px;
+    background-repeat: no-repeat;
+    transition: width 2s, height 1s;
+    box-shadow: 6px 5px 5px black;
+  
+}
+
+.photo3_interet{
+
+  width: 100px;
+  height: 100px;
+  background-image: url(../images_voyages/nico/statue.jpg);
+  background-size: 600px 500px;
+  background-repeat: no-repeat;
+  transition: width 2s, height 1s;
+  box-shadow: 6px 5px 5px black;
+}
+
+.photo4_interet{
+
+  width: 100px;
+  height: 100px;
+  background-image: url(../images_voyages/nico/plage.jpg);
+  background-size: 600px 500px;
+  background-repeat: no-repeat;
+  transition: width 2s, height 1s;
+  box-shadow: 6px 5px 5px black;
+}
+
+/* Carte */
+
+iframe{
+
+  padding-top: 1%;
+  padding-left: 5%;
+  
+}
+
+
+/* 4eme partie bas de la page */
+
+a.button{
+
+color: #ffffff;
+
+letter-spacing: 3px;
+font-size: 15px;
+font-family: 'Nunito Sans',Helvetica,Arial,Lucida,sans-serif ;
+font-weight: 700 ;
+
+
+}
+
+.back_button{ 
+
+  background-color: #345830;
+  border-color: rgba(0,0,0,0);
+  border-radius: 96px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43%;
+
+}
+
+.box_bas{
+
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+/* Formulaire */
+
+
+.titre_box_form{
+
+  text-align: center;
+  font-size: 50px;
+  padding-top: 2%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p.txt_form{
+
+  color: white;
+}
+.box_txt_form{
+
+  display: flex;
+  justify-content: center;
+}
+
+form{
+
+  background: rgb(63,104,67);
+  background: linear-gradient(0deg, rgba(63,104,67,0) 0%, rgba(63,104,67,0.7904295507265406) 100%);  
+  margin: -1%;
+  padding-top: 2%;
+}
+
+.txt_form{
+
+  padding: 2%;
+  text-align: center;
+}
+
+.box1_formulaire, .box2_formulaire{
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+
+input{
+
+  width: 300px;
+}
+
+.box4_formulaire{
+
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+textarea{
+
+  width: 700px;
+  height: 300px;
+}
+
+
